@@ -1,0 +1,122 @@
+
+
+1- 
+  sudo groupadd oficina1
+  sudo groupadd oficina2  
+  emacs /etc/group
+
+
+2-
+  sudo adduser pedro -- ingroup oficina1  
+  sudo adduser pablo -- ingroup oficina1
+
+
+3-
+  sudo adduser alba -- ingroup oficina2  
+  sudo adduser nerea -- ingroup oficina2
+
+
+4-
+  -pedro 
+   emacs topsecret.txt 
+   ls -l topsecret.txt 
+   sudo chmod o -wrx topsecret.txt
+
+
+5-
+  emacs ventas_trimestres.txt 
+  ls -l topsecret.txt 
+  sudo chmod og -wrx tops
+
+
+6-
+  -alba 
+  emacs empleados.txt 
+  sudo chmod ugo+wrx empleados.txt
+
+
+7-
+  exit
+  cp /home/alba/empleados.txt /home/sergio
+  ls -l
+
+
+8- 
+  su -pablo
+  cp /usr/bin/ncal pablo2ncal /home/sergio
+  ls -l
+
+
+9-
+  chmod go-x pablo2ncal
+  ls -l
+  exit
+
+
+10-
+  su -nerea
+  mkdir compartido
+  
+
+11-
+  echo "algunas líneas" > compartido/telefonos.txt
+  echo "algunas líneas" > compartido/gastos.txt
+  echo "algunas líneas" > compartido/sueldos.txt
+
+
+12-
+  sudo chmod g+w telefonos.txt
+  ls -l
+
+
+13-
+  sudo chmod 640 compartido/gastos.txt
+
+
+14-
+  sudo chmod 600 compartido/sueldos.txt  
+
+
+15-
+  sudo chmod 500 compartido/
+  su -alba
+
+
+16- 
+  sudo chmod 540 compartido/
+  su -alba
+  cat /home/nerea/compartido/gastos.txt
+
+
+17-
+  sudo chmod 550 compartido/
+  su -alba
+  cat /home/nerea/compartido/gastos.txt
+
+
+18-
+  sudo chmod g-r compartido/
+  su -alba
+  cat /home/nerea/compartido/gastos.txt
+  ls -l
+  exit
+
+
+19-
+  add user sergio oficina1
+  emact/etc/group
+
+20-
+  no se puede eliminar un grupo si tiene usuarios
+
+
+21-
+  sudo chgrp oficina2 empleados.txt
+
+
+22-
+  sudo userdel alba 
+  ls -l
+      
+
+  	
