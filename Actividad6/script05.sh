@@ -8,4 +8,7 @@ while [ $x -ne 0 ]; do
     contador=$((contador + 1))
     read -p "Introduce un número: " x
 done
+
+media=$((suma/contador))
+
 echo"Has introducido suma de $contador con un valor medio de $media"
