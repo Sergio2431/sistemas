@@ -1,0 +1,1 @@
+read -p "Escribe un numero mayor que 0"
