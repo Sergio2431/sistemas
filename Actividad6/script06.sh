@@ -17,5 +17,3 @@ else
 	precio=$(echo "schale=2;$precio + 0.10 * $x" | bc)
     fi
 fi
-
-echo $precio
