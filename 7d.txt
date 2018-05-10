@@ -1,0 +1,39 @@
+
+Paso1.
+
+Lo primero que debemos hacer es crear una unidad organizativa que llamaremos alumnos
+
+La creamos entrando al administrador del servidor, donde entramos en servidor local.
+En herramientas esta el desplegable donde buscamos "usuarios y equipos de Active Directory".
+Le damos al botón derecho sobre el dominio y creamos la nueva unidad organizativa.
+
+
+Paso2.
+
+Creamos los usuarios correspondientes en la unidad organizativa que hemos creado.
+
+Para crear los usuarios hay que hacer click con el botón derecho sobre la unidad
+organizativa y creamos cada uno de los usuarios que pide el enunciado siguendolos
+pasos que se nos indica.
+
+
+Paso3.
+
+Organizamos los usuarios con los pasos del enunciado.
+
+Creamos dos unidades organizativas, entrando al administrador del servidor, y buscando en el despegable 
+de herramientas "usuariosy equipos de Active Directory", que llamaremos interfaz
+y marketing.
+
+Creamos directivas en marketing e interfaz para registrigir el acceso a unidades extraíbles
+
+
+Paso4.
+
+Creamos grupos con los permisos coreespondientes a cada uno.
+
+
+Paso5.
+
+Asociamos las carpetas a los usuarios correspondientes de cada uno y compartimos las carpetas con los permisos
+correspondientes.   

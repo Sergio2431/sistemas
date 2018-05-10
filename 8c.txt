@@ -1,0 +1,26 @@
+Para ver la versión se usa el comando “apache2ctl -v” y para ver el puerto por el 
+que escucha con “sudo netstat -anp | grep apache”.
+
+ServerRoot “/opt/bitnami/apache2”
+User daemon …
+Group daemon
+Timeout 60
+
+LISTEN 90
+ServerName localhost:90
+
+DocumentRoot “/opt/bitnami/apache2/htdocs" Esta directiva dice la carpeta donde se 
+tienen que alojar los archivos para que los lea el apache.
+
+ErrorLog “logs/error_log”	Esta directiva dice la ruta donde se guarda el 
+archivo con todos los errores que recibe apache.
+
+DirectoryIndex index.html index.php	Esta directiva determina la página que se 
+abre por defecto al abrir una carpeta apache.
+
+Al borrar el archivo index muestra una lista de todos los archivos y directorios 
+de la carpeta htdocs.
+
+Como se ha cambiado el archivo por defecto con el DirectoryIndex se abre el 
+archivo que tenga el mismo nombre y no el index.html. Al quitar los dos archivos 
+se muestra un listado de archivos de la carpeta.
